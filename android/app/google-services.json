@@ -1,0 +1,198 @@
+{
+  "project_info": {
+    "project_number": "452041305778",
+    "project_id": "report-system-8d623",
+    "storage_bucket": "report-system-8d623.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452041305778:android:f9aa14ff3f07e1bc60a3ab",
+        "android_client_info": {
+          "package_name": "com.example.report_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkaGkk8fYZRU0EST_7f-GuuCkAf-OJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452041305778-14igg4sfrg12smk3ott9fk7vc78p9arg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studentCare"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452041305778:android:73b97af5403a401d60a3ab",
+        "android_client_info": {
+          "package_name": "com.example.report_system_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkaGkk8fYZRU0EST_7f-GuuCkAf-OJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452041305778-14igg4sfrg12smk3ott9fk7vc78p9arg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studentCare"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452041305778:android:d342cdd2fc5e9f2f60a3ab",
+        "android_client_info": {
+          "package_name": "com.example.student_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkaGkk8fYZRU0EST_7f-GuuCkAf-OJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452041305778-14igg4sfrg12smk3ott9fk7vc78p9arg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studentCare"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452041305778:android:b589471275adaf3660a3ab",
+        "android_client_info": {
+          "package_name": "com.example.student_care_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkaGkk8fYZRU0EST_7f-GuuCkAf-OJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452041305778-14igg4sfrg12smk3ott9fk7vc78p9arg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studentCare"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452041305778:android:e72da1db70f126c560a3ab",
+        "android_client_info": {
+          "package_name": "com.report.system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452041305778-3hecf30i8i3tjd6u3iti0337570nost4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.report.system",
+            "certificate_hash": "567c44bb8d3b2f39970694159218f435e2e0789b"
+          }
+        },
+        {
+          "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkaGkk8fYZRU0EST_7f-GuuCkAf-OJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452041305778-v86v2i2feqt0orsqvsi68rt5hgv4be1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452041305778-14igg4sfrg12smk3ott9fk7vc78p9arg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studentCare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
