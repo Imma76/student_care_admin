@@ -14,9 +14,15 @@ class UserController extends ChangeNotifier{
  UserModel? userModel;
   init()async{
     centralState.startLoading();
-    userModel= await AuthService().findUserById(FirebaseAuth
+    final check= await AuthService().findUserById(FirebaseAuth
         .instance.currentUser
     !.uid);
+    if(check !=null){
+
+
+      userModel = check;
+    }
+
     print('userrr $userModel');
     centralState.stopLoading();
     notifyListeners();
@@ -24,8 +30,9 @@ class UserController extends ChangeNotifier{
 
   Future checkForAdminEmail(String email)async{
     try{
-      QuerySnapshot querySnapshot = await Collections.admin.where("email", isEqualTo: email).get();
+      QuerySnapshot querySnapshot = await Collections.users.where("email", isEqualTo: email).where("role",isEqualTo: "admin").get();
       if(querySnapshot.docs.isNotEmpty){
+
         return true;
       }
       return null;

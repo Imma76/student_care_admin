@@ -1,5 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
@@ -12,6 +13,7 @@ import '../../model/commentModel.dart';
 import '../../provider/all_provider.dart';
 import '../../theme/app_theme.dart';
 import '../../utils/loader.dart';
+import '../authentication/welcome.dart';
 import '../posts/all_post.dart';
 import '../posts/new_post.dart';
 
@@ -38,6 +40,7 @@ class _HomePageState extends ConsumerState<HomePage> {
 
   //  PostController postController = ref.watch(postProvider);
     return Scaffold(
+
       floatingActionButton:FloatingActionButton(onPressed: (){
 
         Navigator.push(
@@ -47,6 +50,15 @@ class _HomePageState extends ConsumerState<HomePage> {
 
       },child: const Icon(Icons.add,),backgroundColor: AppTheme.primary,),
       appBar:AppBar(
+        actions: [
+          IconButton(icon:Icon(Icons.logout,color: AppTheme.greyMessageColor,),onPressed: ()async{
+            await FirebaseAuth.instance.signOut();
+
+            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>WelcomePage()), (route) => false);
+
+
+          },)
+        ],
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leadingWidth: 300,
@@ -223,7 +235,7 @@ class _PostWidgetState extends ConsumerState<PostWidget> {
                                         widgets((){
 
                                         });
-                                        await  commentsController.createComment(widget.postModel!.postId!);
+                                     //   await  commentsController.createComment(widget.postModel!);
                                         // Add your send message logic here
 
                                         widgets((){

@@ -32,5 +32,23 @@ class PostService{
       return null;
     }
   }
+  static  Stream<List<PostModel>>? getAllEditedPost( {String? status = 'approved',
+    bool? descending = true,
+    var startAt,}){
+    try{
+      Query query =  Collections.post.orderBy("createdAt",descending: true).where("status", isEqualTo:status);
+
+      return query.snapshots()
+          .map((snapShot) => snapShot.docs.map<PostModel>((postModel) {
+
+        Map _temp = postModel.data() as Map<dynamic, dynamic>;
+        _temp['postId'] = postModel.id;
+        // //(_temp);
+        return PostModel.fromJson(_temp as Map<String, dynamic>);
+      }).toList());
+    }catch(e){
+      return null;
+    }
+  }
 
 }

@@ -54,7 +54,7 @@ class _AllUsersState extends ConsumerState<AllUsers> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Center(child: Text('${postController.userList.length}',style: GoogleFonts.poppins(fontSize:15 ,color: AppTheme.primary))),
-                  Center(child: Text('Users',style: GoogleFonts.poppins(fontSize:15 ,color: AppTheme.primary))),
+                  Center(child: Text('User(s)',style: GoogleFonts.poppins(fontSize:15 ,color: AppTheme.primary))),
                 ],
               ),
 

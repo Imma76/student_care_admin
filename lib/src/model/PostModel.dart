@@ -7,17 +7,23 @@ class PostModel{
   DateTime? createdAt;
   String?status;
   String?postId;
+  String? subStatus;
+  bool? isAnonymous;
 
   Poster? poster;
-  PostModel({this.poster,this.createdAt,this.status,this.content,this.picture,this.postId});
+  Poster? anonymousPoster;
+  PostModel({this.poster,this.anonymousPoster,this.createdAt,this.status,this.content,this.picture,this.postId,this.subStatus, this.isAnonymous});
 
   PostModel.fromJson(Map<String, dynamic> data){
     content = data['content'];
     picture =List.from(data['pics']);
+    isAnonymous=data['isAnonymous']??false;
     postId= data['postId'];
     createdAt =Timestamp(data['createdAt'].seconds,data['createdAt'].nanoseconds).toDate();
     status=data['status'];
     poster=Poster.fromJson(data['poster']);
+    subStatus=data['subStatus'];
+    anonymousPoster=data['anonymousPoster'];
   }
   Map<String,dynamic> toJson(){
     Map<String,dynamic> data= {};
@@ -26,7 +32,9 @@ class PostModel{
     data['createdAt']= createdAt;
     data['status']= status;
     data['poster']= poster!.toJson();
-
+    data['subStatus']=subStatus;
+    data['isAnonymous']=isAnonymous;
+    data['anonymousPoster']=anonymousPoster;
     data['pics']=picture;
     return data;
   }
@@ -54,4 +62,17 @@ class Poster{
     data['profilePic']=profilePic;
     return  data;
   }
+}
+
+
+class Status{
+  //static String resolved='resolved';
+  static String pending='pending';
+  static String inReview='In Review';
+  static String approved ='Approved';
+}
+class SubStatus{
+  static String pending='pending';
+  static String inReview='In Review';
+  static String approved ='Approved';
 }

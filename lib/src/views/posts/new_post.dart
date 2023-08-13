@@ -174,14 +174,14 @@ class _ReportFormState extends ConsumerState<NewPost> {
                   //     ),
                   //   ],
                   // ),
-                  Row(
-                    children: [
-                      Text('create post anonymously', style: GoogleFonts.lora(),),const Spacer(),
-                      Switch(value: postController.isAnonymous, onChanged: (value){
-                        postController.changePostVisibility(value);
-                      },activeColor: AppTheme.primary,),
-                    ],
-                  ),
+                  // Row(
+                  //   children: [
+                  //     Text('create post anonymously', style: GoogleFonts.lora(),),const Spacer(),
+                  //     Switch(value: postController.isAnonymous, onChanged: (value){
+                  //       postController.changePostVisibility(value);
+                  //     },activeColor: AppTheme.primary,),
+                  //   ],
+                  // ),
                   // Visibility(
                   //   visible: !postController.isAnonymous,
                   //   child: Column(

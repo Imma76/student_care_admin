@@ -4,7 +4,7 @@ class UserModel{
   String? userId;
   String? department;
   DateTime? createdAt;
-  Role? role;
+  String? role;
 
   String?fcmToken;
   String? level;
